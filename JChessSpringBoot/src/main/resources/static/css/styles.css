@@ -1,0 +1,41 @@
+/* Chessboard styling */
+#chessboard {
+    display: grid; /* Use grid layout for the chessboard */
+    grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
+    grid-template-rows: repeat(8, 1fr); /* 8 equal rows */
+    width: 480px; /* Total width of the chessboard */
+    height: 480px; /* Total height of the chessboard */
+    border: 2px solid black; /* Add a black border around the chessboard */
+    margin: 20px auto; /* Center the chessboard horizontally */
+    gap: 0; /* Remove any gaps between the squares */
+    box-sizing: border-box; /* Ensure border is included in the total size */
+}
+
+/* Styling for individual squares */
+.square {
+    width: 100%; /* Ensure the square takes full width of its grid cell */
+    height: 100%; /* Ensure the square takes full height of its grid cell */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* Allow absolute positioning if needed */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+}
+
+/* Light square color */
+.square.light {
+    background-color: #f0d9b5; /* Light tan color */
+}
+
+/* Dark square color */
+.square.dark {
+    background-color: #b58863; /* Dark brown color */
+}
+
+/* Styling for chess piece images */
+.square img {
+    width: 90%; /* Image size relative to the square */
+    height: 90%; /* Maintain aspect ratio */
+    object-fit: contain; /* Scale the image without distortion */
+    pointer-events: none; /* Prevent dragging or selecting images */
+}
