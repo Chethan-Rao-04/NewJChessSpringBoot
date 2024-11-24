@@ -1,0 +1,27 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# macOS files
+.DS_Store
+
+# Maven Wrapper files
+.mvn/
+mvnw
+mvnw.cmd
+
+# Build directories
+target/
+build/
+
+# Log files
+*.log
+
+# IDE-specific files
+/.project
+/.classpath
+/.settings/
+
+# Other system files
+*.swp
+
