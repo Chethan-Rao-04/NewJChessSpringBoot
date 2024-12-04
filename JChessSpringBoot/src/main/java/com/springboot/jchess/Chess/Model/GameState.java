@@ -21,6 +21,7 @@ public class GameState {
 
         public String getCurrentPlayer() {
             return currentPlayer;
+
         }
 
         public void setCurrentPlayer(String currentPlayer) {

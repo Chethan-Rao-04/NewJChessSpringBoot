@@ -38,5 +38,8 @@ import org.springframework.stereotype.Service;
             // Switch player
             gameState.setCurrentPlayer(gameState.getCurrentPlayer().equals("white") ? "black" : "white");
         }
-    }
+
+//    public String[][] getInitialBoardState() {
+//    }
+}
 
